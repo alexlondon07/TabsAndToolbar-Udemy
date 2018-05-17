@@ -4,22 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.alexlondon07.tabsandtoolbar_courseudemy.MainActivity">
+    tools:context="io.github.alexlondon07.tabsandtoolbar_courseudemy.udemy.activities.MainActivity">
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/my_toolbar">
+        android:layout_below="@id/toolbar">
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,7 +23,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </RelativeLayout>
-
-
 
 </RelativeLayout>

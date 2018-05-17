@@ -1,9 +1,11 @@
-package io.github.alexlondon07.tabsandtoolbar_courseudemy;
+package io.github.alexlondon07.tabsandtoolbar_courseudemy.udemy.activities;
 
 import android.support.v7.app.AppCompatActivity;
  import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+
+import io.github.alexlondon07.tabsandtoolbar_courseudemy.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadView() {
-        Toolbar toolbar = findViewById(R.id.my_toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
